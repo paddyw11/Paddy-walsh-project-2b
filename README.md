@@ -24,16 +24,78 @@ A button should appear to click: _Open Preview_ or _Open Browser_.
 
 In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+# Sut mae'r tywydd heddiw? \(SMTH?\)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+SMTH? is a card flip memory game designed to assist the learning of Welsh phrases of the weather. The idea was inspired from my own learning of the language and completing similar interactive activities to aid learning.
 
----
+SMTH requires users to remember the position and the translation of the respective weather picture and match them accordingly.
+### Live project
+Find the live project [here](....)
 
-Happy coding!
+## Contents
+
+- [Sut mae'r tywydd heddiw? (SMTH?)](#sut-maer-tywydd-heddiw-smth)
+    - [Live project](#live-project)
+  - [Contents](#contents)
+  - [UX](#ux)
+    - [User Stories](#user-stories)
+  - [Design](#design)
+    - [Wireframes](#wireframes)
+      - [Desktop view](#desktop-view)
+      - [Tablet view](#tablet-view)
+      - [Mobile view](#mobile-view)
+    - [Fonts](#fonts)
+    - [Colours](#colours)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Future Features](#future-features)
+  - [Technologies](#technologies)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+
+## UX 
+
+### User Stories
+As a player of the game:
+    - I want to have fun
+    - I want to undertand how to be able to play the game
+    - I want to be able to keep log of my score
+
+## Design
+
+### Wireframes
+
+#### Desktop view
+<p align="center">
+<img src="" width="600" height="1000">
+</p>
+
+#### Tablet view
+<p align="center">
+<img src="" width="500" height="1100">
+</p>
+
+#### Mobile view
+<p align="center">
+<img src="" width="300" height="1100">
+</p>
+
+### Fonts
+
+### Colours
+
+## Features
+
+### Existing Features
+
+### Future Features
+
+## Technologies
+
+## Testing
+
+## Deployment 
+
+## Credits
