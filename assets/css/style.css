@@ -11,7 +11,7 @@ body {
 .top-section {
     height: 1000px;
     width: 100%;
-    background: url("../images/forecast-map.jpg") no-repeat center center;
+    background: url("../images/tree.jpg") no-repeat center center;
     background-size: cover;
     opacity: 0.3;
 }
@@ -31,7 +31,8 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    border: 2px solid blue
+    border: 2px solid blue;
+    perspective: 1000px;
 }
 .card {
     width: calc(25% - 10px);
@@ -40,11 +41,17 @@ body {
     border: 2px solid #00ff55;
     margin: 5px;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 
 .card:active {
     transform: scale(.97);
     transition: transform .2s;
+}
+
+.card.flip {
+    transform: rotateY(180deg);
 }
 .front, .back {
     width: 100%;
@@ -52,7 +59,12 @@ body {
     padding: 10px;
     position: absolute;
     border: 2px solid #ff00dd;
+    backface-visibility: hidden;
     }
+
+.front {
+    transform: rotateY(180deg);
+}
 
 #snow {
     background-color: #577590;

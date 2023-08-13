@@ -25,7 +25,9 @@ A button should appear to click: _Open Preview_ or _Open Browser_.
 SMTH? is a card flip memory game designed to assist the learning of Welsh phrases of the weather. The idea was inspired from my own learning of the language and completing similar interactive activities to aid learning.
 
 SMTH requires users to remember the position and the translation of the respective weather picture and match them accordingly.
+
 ### Live project
+
 Find the live project [here](....)
 
 ## Contents
@@ -51,7 +53,7 @@ Find the live project [here](....)
   - [Credits](#credits)
     - [Media](#media)
 
-## UX 
+## UX  
 
 ### User Stories
 As a player of the game:
@@ -59,43 +61,46 @@ As a player of the game:
     - I want to undertand how to be able to play the game
     - I want to be able to keep log of my score
 
-## Design
+## Design  
 
-### Wireframes
+### Wireframes  
 
 #### Desktop view
+
 <p align="center">
 <img src="" width="600" height="1000">
 </p>
 
 #### Tablet view
+
 <p align="center">
 <img src="" width="500" height="1100">
 </p>
 
 #### Mobile view
+
 <p align="center">
 <img src="" width="300" height="1100">
 </p>
 
-### Fonts
+### Fonts  
 
-### Colours
+### Colours  
 
-## Features
+## Features  
 
-### Existing Features
+### Existing Features  
 
-### Future Features
+### Future Features  
 
-## Technologies
+## Technologies  
 
-## Testing
+## Testing  
 
-## Deployment 
+## Deployment
 
 ## Credits
 
-### Media 
+### Media  
 
 [Pixabay](https://pixabay.com/) for the card images
