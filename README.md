@@ -54,6 +54,7 @@ Find the live project [here](....)
   - [Testing](#testing)
   - [Deployment](#deployment)
   - [Credits](#credits)
+    - [Media](#media)
 
 ## UX 
 
@@ -99,3 +100,7 @@ As a player of the game:
 ## Deployment 
 
 ## Credits
+
+### Media 
+
+[Pixabay](https://pixabay.com/) for the card images

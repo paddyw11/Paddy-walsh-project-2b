@@ -4,7 +4,35 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background-color: aqua;
+.top-section {
+    height: 350px;
+    width: 100%;
+    background: url("../images/forecast-map.jpg") no-repeat center center;
+    background-size: cover;
+    opacity: 0.6;
 }
+
+.memory-game {
+    width: 800px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid blue
+}
+.card {
+    width: calc(25% - 10px);
+    height: 25%;
+    position: relative;
+    border: 2px solid #00ff55;
+    margin: 5px;
+}
+.front, .back {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    border: 2px solid #ff00dd;
+    background: blue;
+}
+
