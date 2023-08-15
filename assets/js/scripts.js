@@ -2,6 +2,8 @@ const cards = document.querySelectorAll('.card')
 
 let hasFlippedCard = false;
 let lockBoard =false;
+let score = 0;
+let counter = document.querySelector(".score");
 let firstCard, secondCard;
 
 function flipCard() {
@@ -32,6 +34,7 @@ function checkForMatch() {
         secondCard.dataset.weather) {
         // it's a match
        disableCards();
+
     } else {
         unflipCards();
     }
@@ -59,4 +62,16 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 
+
+function moveCounter() {
+    score++;
+    counter.innerHTML = moves;
+
+    if (moves === 1) {
+        second = 0;
+        minute = 0;
+        startTimer();
+
+    }
+}
 cards.forEach(card => card.addEventListener('click', flipCard))
