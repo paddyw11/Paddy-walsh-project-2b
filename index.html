@@ -9,96 +9,106 @@
   </head>
   <body>
     <div class="top-section">
-        <header class="text-header">Sut mae'r tywydd heddiw?</header>
+        <header class="text-header">Sut mae'r tywydd heddiw? /<br>
+        What is the weather today?</header>
         <div class="cover-text">
-            <h3> Do you know your weather types in welsh?</h3>
+            <h3> Do you know your weather types in Welsh?</h3>
         </div>
+        <a href="#play-the-game"><Span class="play">Play Now!</Span></a>
     </div>
     <!-- section for revision block -->
-    <div>
+    
 
     </div>
     <!-- section for game block -->
-    <section class="memory-game">
-        <div class="card" data-weather="cloudy">
+    <div class="game-section">
+        <div class="game-text">
+        <h3 id="play-the-game">Play the Game</h3><br>
+        <p> Test yourself to see if you can remember the weather type and its matching Welsh word!</p>
+        </div>
+        <section class="memory-game">
+        
+            <div class="card" data-weather="cloudy">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella"/>
             <img class="front" src="assets/images/game/cloudy.png" alt="Cloudy"/>
-        </div>
-        <div class="card" data-weather="hot">
+            </div>
+            <div class="card" data-weather="hot">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/hot.png" alt="red thermometer and sun symbol" />
-        </div>
-        <div class="card" data-weather="rain">
+            </div>
+            <div class="card" data-weather="rain">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/rain.png" alt="Rain cloud" />
-        </div>
-        <div class="card" data-weather="rainbow">
+            </div>
+            <div class="card" data-weather="rainbow">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/rainbow.png" alt="Rainbow" />
-        </div>
-        <div class="card" data-weather="snow">
+            </div>
+            <div class="card" data-weather="snow">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" id="snow" src="assets/images/game/snow.png" alt="Snow cloud" />
-        </div>
-        <div class="card" data-weather="stormy">
+            </div>
+            <div class="card" data-weather="stormy">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella"/>
             <img class="front" src="assets/images/game/stormy.png" alt="Storm cloud"/>
-        </div>
-        <div class="card" data-weather="sunny">
+            </div>
+            <div class="card" data-weather="sunny">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella"/>
             <img class="front" src="assets/images/game/sun.png" alt="Sun"/>
-        </div>
-        <div class="card" data-weather="windy">
+            </div>
+            <div class="card" data-weather="windy">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella"/>
             <img class="front" src="assets/images/game/windy.png" alt="Windy cloud"/>
-        </div>
-        <div class="card" data-weather="stormy">
+            </div>
+            <div class="card" data-weather="stormy">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/stormus.png" alt="Stormus" />
-        </div>
-        <div class="card" data-weather="hot">
+            </div>
+            <div class="card" data-weather="hot">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/poeth.png" alt="Poeth" />
-        </div>
-        <div class="card" data-weather="rainbow">
+            </div>
+            <div class="card" data-weather="rainbow">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/enfys.png" alt="Enfys" />
-        </div>
-        <div class="card" data-weather="sunny">
+            </div>
+            <div class="card" data-weather="sunny">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/heulog.png" alt="heulog" />
-        </div>
-        <div class="card" data-weather="windy">
+            </div>
+            <div class="card" data-weather="windy">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/gwyntog.png" alt="Gwyntog" />
-        </div>
-        <div class="card" data-weather="cloudy">
+            </div>
+            <div class="card" data-weather="cloudy">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/cylmylog.png" alt="Cymylog" />
-        </div>
-        <div class="card" data-weather="rain">
+            </div>
+            <div class="card" data-weather="rain">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/bwrwglaw.png" alt="Bwrw Glaw" />
-        </div>
-        <div class="card" data-weather="snow">
+            </div>
+            <div class="card" data-weather="snow">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella" />
             <img class="front" src="assets/images/game/bwrweira.png" alt="Bwrw Eira" />
-        </div>
-        
-    </section>
+            </div>
+        </section>    
+    </div>
+
+    <!-- section for timer and counter block -->
     <section>
 
     </section>
 
 
 
-    <!-- section for timer and counter block -->
+    
 
     <div class="score-timer-card">
         <div class="score-counter">
-            <h3> Score: <span class="score"> 0 </span>
+            <h3> Number of moves: <span class="score"> 0 </span>
         </div>
-        <div class="timer"></div>
+        <div class="timer" id="timer">Elapsed time: 00:00</div>
     </div>
     <div class="play-again">
 

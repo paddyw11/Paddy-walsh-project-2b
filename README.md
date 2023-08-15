@@ -31,17 +31,15 @@ Find the live project [here](....)
   - [Credits](#credits)
     - [Media](#media)
 
-## UX  
+## UX
 
 ### User Stories
-As a player of the game:
-    - I want to have fun
-    - I want to undertand how to be able to play the game
-    - I want to be able to keep log of my score
 
-## Design  
+As a player of the game: - I want to have fun - I want to undertand how to be able to play the game - I want to be able to keep log of my score
 
-### Wireframes  
+## Design
+
+### Wireframes
 
 #### Desktop view
 
@@ -61,24 +59,26 @@ As a player of the game:
 <img src="" width="300" height="1100">
 </p>
 
-### Fonts  
+### Fonts
 
-### Colours  
+### Colours
 
-## Features  
+## Features
 
-### Existing Features  
+### Existing Features
 
-### Future Features  
+### Future Features
 
-## Technologies  
+## Technologies
 
-## Testing  
+## Testing
 
 ## Deployment
 
 ## Credits
 
-### Media  
+A number of resources were used to assist in the understandig of using HTML, CSS and Javascript to create a flip card memory game.
+I used a walkthrough to log the basics, namely 
+### Media
 
 [Pixabay](https://pixabay.com/) for the card images

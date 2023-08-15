@@ -1,7 +1,7 @@
-const cards = document.querySelectorAll('.card')
+const cards = document.querySelectorAll('.card');
 
 let hasFlippedCard = false;
-let lockBoard =false;
+let lockBoard = false;
 let score = 0;
 let counter = document.querySelector(".score");
 let firstCard, secondCard;
@@ -9,20 +9,19 @@ let firstCard, secondCard;
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
-    this.classList.add('flip')
-
+    this.classList.add("flip");
+    moveCounter();
     if (!hasFlippedCard) {
         // first click
         hasFlippedCard = true;
         firstCard = this;
 
         return;
-        }
-
-        secondCard = this;
-        hasFlippedCard = false;
-        
-        checkForMatch();
+    }
+    hasFlippedCard = false;
+    secondCard = this;
+    moveCounter();
+    checkForMatch();
     }
 
 function checkForMatch() {
@@ -30,19 +29,17 @@ function checkForMatch() {
 
     isMatch ? disableCards() : unflipCards();
     // do cards match?
-    if (firstCard.dataset.weather ===
-        secondCard.dataset.weather) {
+    if (firstCard.dataset.weather === secondCard.dataset.weather) {
         // it's a match
-       disableCards();
-
+        disableCards();
     } else {
         unflipCards();
     }
 }
 
 function disableCards() {
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard);
+    firstCard.removeEventListener("click", flipCard);
+    secondCard.removeEventListener("click", flipCard);
 
     resetBoard();
 }
@@ -50,10 +47,10 @@ function disableCards() {
 function unflipCards() {
     lockBoard = true;
     setTimeout(() => {
-        firstCard.classList.remove('flip');
-        secondCard.classList.remove('flip');
+        firstCard.classList.remove("flip");
+        secondCard.classList.remove("flip");
 
-        resetBoard()
+        resetBoard();
     }, 1500);
 }
 
@@ -62,16 +59,21 @@ function resetBoard() {
     [firstCard, secondCard] = [null, null];
 }
 
+(function shuffle() {
+    cards.forEach(card => {
+        let randomPos = Math.floor(Math.random() * 16);
+        card.style.order = randomPos;
+    });
+})();
 
 function moveCounter() {
     score++;
-    counter.innerHTML = moves;
+    counter.innerHTML = score;
 
-    if (moves === 1) {
+    if (score === 1) {
         second = 0;
         minute = 0;
         startTimer();
-
     }
 }
-cards.forEach(card => card.addEventListener('click', flipCard))
+cards.forEach((card) => card.addEventListener("click", flipCard));
