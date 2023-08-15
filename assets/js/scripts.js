@@ -10,12 +10,12 @@ function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
     this.classList.add("flip");
-    moveCounter();
+    
     if (!hasFlippedCard) {
         // first click
         hasFlippedCard = true;
         firstCard = this;
-
+        moveCounter()
         return;
     }
     hasFlippedCard = false;
@@ -64,7 +64,7 @@ function resetBoard() {
         let randomPos = Math.floor(Math.random() * 16);
         card.style.order = randomPos;
     });
-})();
+})();  
 
 function moveCounter() {
     score++;
@@ -76,4 +76,27 @@ function moveCounter() {
         startTimer();
     }
 }
+
+// timer
+var second = 0,
+    minute = 0;
+var timer = document.querySelector(".timer");
+var interval;
+
+
+function startTimer() {
+    interval = setInterval(function() {
+        timer.innerHTML = "Elasped Time: " + minute + " mins " + second + " secs ";
+        second++;
+        if (second == 60) {
+            minute++;
+            second = 0;
+        }
+        if (minute == 60) {
+            minute = 0;
+        }
+    }, 1000);
+}
+
+
 cards.forEach((card) => card.addEventListener("click", flipCard));

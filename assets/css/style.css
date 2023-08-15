@@ -160,7 +160,7 @@ body {
     width: 100%;
     text-align: center;
     font-size: larger;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     margin-top: 25px;
     color: #ffffff;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -177,3 +177,36 @@ body {
     display: inline-block;
     padding-left: 250px;
 }
+
+.play-again {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:30px 60px;
+}
+#resetbutton {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
+}
+#resetbutton:hover {
+    background-color: grey;
+}
+
+/* Footer*/
+footer {
+    background-color: #000000;
+    colour: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    display: inline;
+}
+
