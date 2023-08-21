@@ -15,6 +15,8 @@ body {
     width: 100%;
     background: url("../images/tree.jpg") no-repeat center center;
     background-size: cover;
+    position: relative;
+    text-align: center;
 }
 
 .text-header {
@@ -40,6 +42,7 @@ body {
 }
 
 .play {
+    position: relative;
     font-size: 130%;
     font-family: Barlow;
     font-weight: 900;
@@ -54,7 +57,28 @@ body {
     transition: 1s;
     cursor: pointer;
 }
+button{
+    position: relative;
+    font-size: 130%;
+    font-family: Barlow;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 250px;
+    height: 100px;
+    padding-top: 0;
+    padding-left: 10px;
+    background-color: #2600ffb3;
+    border-radius: 15px;
+    transition: 1s;
+    cursor: pointer;
+}
+.revision-modal {
+    display:none;
+    background-color: rgba(black, black, black, .75);
+    position:fixed;
 
+}
 .modal {
     display: none;
     /* Hidden by default */
@@ -200,7 +224,7 @@ body {
 /* Footer*/
 footer {
     background-color: #000000;
-    colour: white;
+    color: white;
     text-align: center;
     padding: 10px;
     position: fixed;
