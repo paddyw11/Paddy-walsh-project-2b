@@ -7,7 +7,7 @@
 body {
     height: 75vh;
     display: grid;
-    background-color:  #55f1ff;
+    background-color: #66D0FF;
 }
 
 .top-section {
@@ -41,6 +41,25 @@ body {
     color: #fefefe;
 }
 
+button {
+    position: relative;
+    font-size: 130%;
+    font-family: Barlow;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 350px;
+    height: 120px;
+    padding-top: 0;
+    padding-left: 10px;
+    background-color: #ECEFF1;
+    border-radius: 100px;
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 70px;
+}
+
 .play {
     position: relative;
     font-size: 130%;
@@ -48,66 +67,85 @@ body {
     font-weight: 900;
     text-align: center;
     letter-spacing: 2px;
-    width: 250px;
-    height: 100px;
+    width: 350px;
+    height: 120px;
     padding-top: 0;
     padding-left: 10px;
-    background-color: #2600ffb3;
-    border-radius: 15px;
+    background-color: #ECEFF1;
+    border-radius: 100px;
     transition: 1s;
     cursor: pointer;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 70px;
 }
-button{
+.revise{
     position: relative;
     font-size: 130%;
     font-family: Barlow;
     font-weight: 900;
     text-align: center;
     letter-spacing: 2px;
-    width: 250px;
-    height: 100px;
+    width: 350px;
+    height: 120px;
     padding-top: 0;
     padding-left: 10px;
-    background-color: #2600ffb3;
-    border-radius: 15px;
+    background-color: #ECEFF1;
+    border-radius: 100px;
     transition: 1s;
     cursor: pointer;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
 }
-.revision-modal {
-    display:none;
-    background-color: rgba(black, black, black, .75);
-    position:fixed;
 
-}
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
+#revisionModal {
+    display:none;
+    position:fixed;
+    background-color: rgba(black, black, black, 0.7);
+    z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
+.revision-wrapper {
+    display: inline-block;
+    font-size: large;
     padding: 20px;
-    border: 1px solid rgb(0, 0, 0);
-    width: 80%;
-    /* Could be more or less, depending on screen size */
+    text-align: center;
+    border-radius: 20px;
+    border: 15px solid rgb(0, 0, 0);
+    background-color: rgb(75, 255, 225);
+}
+
+.modal-text {
+    font-weight: 600;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#closeBtn {
+    display: inline-block;
+    color: #fff;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: blue;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.revision-list {
+    margin-bottom: 25px;
+    color: black;
+    text-align: center;
+    padding: 0px 100px;
+    
 }
 
 

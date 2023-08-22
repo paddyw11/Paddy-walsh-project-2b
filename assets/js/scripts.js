@@ -1,6 +1,4 @@
 var cards = document.querySelectorAll('.card');
-cards.forEach((card) => card.addEventListener("click", flipCard));
-
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -12,18 +10,25 @@ const revisionBtn = document.getElementById("revisionBtn"); // HOW TO PLAY BTN
 const closeBtn = document.getElementById("closeBtn"); // HOW TO PLAY CLOSE WINDOW
 
 
+window.onload = initialiseBoard();
+
 // REVISION BTN
 revisionBtn.addEventListener('click', showRevisionModal); // listen for open click of revision modal
 closeBtn.addEventListener('click', closeRevisionModal); // listen for close revision modal button
 
 function showRevisionModal() {
-    revisionmodal.style.display = "block";
+    revisionModal.style.display = "block";
 }
 
 function closeRevisionModal() {
-    revisionmodal.style.display = "none";
+    revisionModal.style.display = "none";
 }
 
+function initialiseBoard() {
+
+    cards.forEach((card) => card.addEventListener("click", flipCard));
+    shuffle();
+}
 
 function flipCard() {
     if (lockBoard) return;
@@ -60,7 +65,7 @@ function checkForMatch() {
 function disableCards() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
-
+    
 }
 
 function unflipCards() {
@@ -103,7 +108,7 @@ var interval;
 
 function startTimer() {
     interval = setInterval(function () {
-        timer.innerHTML = "Elasped Time: " + minute + " mins " + second + " secs ";
+        timer.innerHTML = "Elapsed Time: " + minute + " mins " + second + " secs ";
         second++;
         if (second == 60) {
             minute++;
@@ -136,7 +141,7 @@ function resetBoard() {
     clearInterval(interval);
     timer.innerHTML = "Elapsed Time 0 mins 0 secs";
     cards.forEach(card => card.classList.remove("flip"));
-    shuffle();
+    initialiseBoard();
 }
 
 const resetButton = document.getElementById("resetButton");
