@@ -6,13 +6,13 @@ let score = 0;
 let counter = document.querySelector(".score");
 let firstCard, secondCard;
 
-const revisionBtn = document.getElementById("revisionBtn"); // HOW TO PLAY BTN
-const closeBtn = document.getElementById("closeBtn"); // HOW TO PLAY CLOSE WINDOW
+const revisionBtn = document.getElementById("revisionBtn"); // revision modal open
+const closeBtn = document.getElementById("closeBtn"); // revision modal close
 
 
 window.onload = initialiseBoard();
 
-// REVISION BTN
+// REVISION MODAL
 revisionBtn.addEventListener('click', showRevisionModal); // listen for open click of revision modal
 closeBtn.addEventListener('click', closeRevisionModal); // listen for close revision modal button
 
@@ -79,7 +79,7 @@ function unflipCards() {
     }, 1500);
 }
 
-//function to shuffle to locations of the cards
+//function to shuffle the locations of the cards
 function shuffle() {
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 16);
