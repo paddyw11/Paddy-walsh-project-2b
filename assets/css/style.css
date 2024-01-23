@@ -7,11 +7,11 @@
 body {
     height: 75vh;
     display: grid;
-    background-color: #CBD2C0;
+    background-color: #74a7ff;
 }
 
 h1,h2,h3, p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'sans-serif';
 }
 
 .top-section {
@@ -233,6 +233,65 @@ button {
 #resetbutton:hover {
     background-color: grey;
 }
+/* congrats modal and background */
+#congratsBk {
+    visibility: hidden;
+    opacity: 0;
+}
+.overlay {
+    position:fixed;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	opacity: 0;
+}
+
+.congrats_modal {
+    margin: 50px auto;
+    padding: 20px;
+    position:relative;
+    background: #fefefe;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+}
+.congrats_modal h2 {
+
+    margin-top: 0;
+    color: #000000;
+    max-width: 90%;
+    text-align: center;
+}
+.show {
+    visibility: visible !important;
+    opacity: 100 !important;
+}
+
+.congrats_modal .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+}
+.congrats_modal .time_score {
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+    margin: 10px;
+}
+
 
 /* Footer*/
 footer {

@@ -5,6 +5,8 @@ let lockBoard = false;
 let score = 0;
 let counter = document.querySelector(".score");
 let firstCard, secondCard;
+let congratsModal = document.getElementById("congratsBk");
+let closeCongratsBtn = document.getElementById("closeCongratsBtn");
 
 const revisionBtn = document.getElementById("revisionBtn"); // revision modal open
 const closeBtn = document.getElementById("closeBtn"); // revision modal close
@@ -12,9 +14,13 @@ const closeBtn = document.getElementById("closeBtn"); // revision modal close
 
 window.onload = initialiseBoard();
 
-// REVISION MODAL
+
+// Revision modal
 revisionBtn.addEventListener('click', showRevisionModal); // listen for open click of revision modal
 closeBtn.addEventListener('click', closeRevisionModal); // listen for close revision modal button
+
+closeCongratsBtn.addEventListener('click', closeCongratsModal);
+
 
 function showRevisionModal() {
     revisionModal.style.display = "block";
@@ -47,6 +53,7 @@ function flipCard() {
     secondCard = this;
     moveCounter();
     checkForMatch();
+    checkWin();
 }
 
 function checkForMatch() {
@@ -127,6 +134,24 @@ function playAudio(card) {
         audio.currentTime = 0;
         audio.play();
     }
+}
+
+// Congratulations modal
+function checkWin() {
+    const allFlipped = Array.from(cards).every(card => card.classList.contains("flip"));
+    
+    if (allFlipped) {
+        showCongratsModal();
+    }
+}
+
+function showCongratsModal() {
+    congratsModal.classList.add("show")
+    //congratsModal.style.visibility = "visible";
+}
+ 
+function closeCongratsModal() {
+    congratsModal.style.visibility = "hidden";
 }
 
 // function to reset the board, timer and counter
