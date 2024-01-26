@@ -19,7 +19,7 @@ window.onload = initialiseBoard();
 revisionBtn.addEventListener('click', showRevisionModal); // listen for open click of revision modal
 closeBtn.addEventListener('click', closeRevisionModal); // listen for close revision modal button
 
-closeCongratsBtn.addEventListener('click', closeCongratsModal);
+closeCongratsBtn.addEventListener('click', closeCongratsModal); // listen for click on close button for congrats modal
 
 
 function showRevisionModal() {
@@ -94,17 +94,30 @@ function shuffle() {
     });
 };
 
-// fucntion for the move counter
-function moveCounter() {
-    score++;
-    counter.innerHTML = score;
 
-    if (score === 1) {
-        second = 0;
-        minute = 0;
-        startTimer();
+function moveCounter() {
+    if (hasFlippedCard) {
+        score++;
+        counter.innerHTML = score;
+
+        if (score === 1) {
+            second = 0;
+            minute = 0;
+            startTimer();
+        }
     }
 }
+// fucntion for the move counter
+//function moveCounter() {
+ //   score++;
+ //   counter.innerHTML = score;
+
+  //  if (score === 1) {
+  //      second = 0;
+  //      minute = 0;
+ //       startTimer();
+ //   }
+//}
 
 // timer
 var second = 0,
@@ -151,7 +164,7 @@ function showCongratsModal() {
 }
  
 function closeCongratsModal() {
-    congratsModal.style.visibility = "hidden";
+    congratsModal.classList.remove("show");
 }
 
 // function to reset the board, timer and counter
