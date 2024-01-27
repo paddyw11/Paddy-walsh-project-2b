@@ -70,8 +70,11 @@ As a player of the game:
 
 ### Colours
 
--I decided on a palette of colours to make the game more pleasing and to add a connection between the pairs.  
+![color palette]("assets/images/palette.png)
 
+-I decided on a palette of colours to be used on the game board to make the game more pleasing and to add a connection between the pairs. -  Sourced from Coolors.
+
+- **#74a7ff** - Body background colour. It serves as a cloudless sky. 
 
 ## Features
 

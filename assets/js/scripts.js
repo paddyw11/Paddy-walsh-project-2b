@@ -170,6 +170,7 @@ function resetBoard() {
   closeCongratsModal();
 }
 
-const resetButton = document.getElementById("resetButton", "resetButton2");
+const resetButton = document.getElementById("resetButton",);
+const resetButton2 = document.getElementById("resetButton2");
 resetButton.addEventListener("click", resetBoard);
 resetButton2.addEventListener("click", resetBoard);

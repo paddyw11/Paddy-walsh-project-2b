@@ -15,49 +15,40 @@
     <div class="top-section">
         <header class="text-header">Sut mae'r tywydd heddiw? /<br>
         What is the weather today?</header>
-        <div class="cover-text">
-            <h3> Do you know your weather types in Welsh?</h3>
-        </div>
-        <a href="#play-the-game"><div class="play top-buttons">Play Now!</div></a>
+        <span id="playbtn" class="play"><a href="#play-the-game">Play Now!</a>
+        </span>
         <!-- section for revision block -->
-        <button id="revisionBtn" class="revise top-buttons" type="button">Revise</button>
+        <span id="revisionBtn" class="play top-buttons">Revise</span>
         <div id="revisionModal">
-            <div>
-                <div>
-                    <h2 class="cover-text">Revise</h2>
-                </div>
-            </div>
             <div class="revision-wrapper">
                 <div class="modal-text">
                         <div class="revision-list">
-                            <p>Sunny - Heulog</p>
-                            <p>Cloudy - Cymylog</p>
-                            <p>Rainbow - Enfys</p>
-                            <p>Rain - Bwrw glaw</p>
-                            <p>Snow - Bwrw eira</p>
-                            <p>Stormy - Stormus</p>
-                            <p>Windy - Gwyntog</p>
+                            <p>Sunny - Heulog</p><br>
+                            <p>Cloudy - Cymylog</p><br>
+                            <p>Rainbow - Enfys</p><br>
+                            <p>Rain - Bwrw glaw</p><br>
+                            <p>Snow - Bwrw eira</p><br>
+                            <p>Stormy - Stormus</p><br>
+                            <p>Windy - Gwyntog</p><br>
                             <p>Hot - Poeth</p>
                         </div>
                 </div>      
-                <span id="closeBtn">Close</span>
+                <span id="closeBtn" class="closeBtn">Close</span>
             </div>
         </div>
     </div>
-    
-    
-
-    
+       
     <!-- section for game block -->
     <div class="game-section">
         <div class="game-text">
         <h3 id="play-the-game">Play the Game</h3><br>
-        <p> Test yourself to see if you can remember the weather type and its matching Welsh word!</p>
+        <p> Test yourself to see if you can remember the weather type and its matching Welsh word!</p><br>
+        <p> Turn your audio on for a hint on the image tiles.</p><br>
         </div>
         <section class="memory-game">
         
             <div class="card" data-weather="cloudy">
-            <img class="back" src="assets/images/game/umbrella.webp" alt="Umbrella">
+            <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
             <img class="front" id="cloudy" src="assets/images/game/cloudy.png" alt="Cloudy">
             <audio id="cylmylog" src="assets/audio/cymylog.mp4"></audio>
             </div>
@@ -118,22 +109,21 @@
             </div>
             <div class="card" data-weather="cloudy">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-            <img class="front" src="assets/images/game/cymylog.webp" alt="Cymylog">
+            <img class="front" src="assets/images/game/cymylog.png" alt="Cymylog">
             </div>
             <div class="card" data-weather="rain">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-            <img class="front" src="assets/images/game/bwrwglaw.webp" alt="Bwrw Glaw">
+            <img class="front" src="assets/images/game/bwrwglaw.png" alt="Bwrw Glaw">
             </div>
             <div class="card" data-weather="snow">
             <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-            <img class="front" src="assets/images/game/bwrweira.webp" alt="Bwrw Eira">
+            <img class="front" src="assets/images/game/bwrweira.png" alt="Bwrw Eira">
             </div>
         </section>    
     </div>
 
     <!-- section for timer and counter block -->
         
-
     <div class="score-timer-card">
         <div class="score-counter">
             <h3> Number of moves: <span class="score"> 0 </span> </h3>
@@ -158,7 +148,6 @@
             </div>
         </div>
     </div>
-    <script src="https://kit.fontawesome.com/b45e489d19.js" crossorigin="anonymous"></script>
     <script src="assets/js/scripts.js"></script>
   </body>
 </html>

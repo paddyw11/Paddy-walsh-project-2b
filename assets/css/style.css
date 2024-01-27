@@ -5,7 +5,6 @@
 }
 
 body {
-  height: 75vh;
   display: grid;
   background-color: #74a7ff;
 }
@@ -15,6 +14,7 @@ h2,
 h3,
 p {
   font-family: "Open Sans", "sans-serif";
+  color:#fff;
 }
 
 .top-section {
@@ -40,6 +40,14 @@ p {
   right: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    vertical-align: auto;
+}
+
 .text-header {
   width: fit-content;
   margin: auto;
@@ -50,20 +58,6 @@ p {
   font-weight: bold;
   margin-bottom: 30px;
   color: #fefefe;
-}
-
-.cover-text {
-  margin: auto;
-  text-align: center;
-  font-size: 1.875em;
-  font-family: "Open Sans", sans-serif;
-  padding-top: 5px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #fefefe;
-  border: 4px solid #fefefe;
-  background-color: rgba(8, 95, 0, 0.6);
-  border-radius: 10px;
 }
 
 button {
@@ -85,6 +79,38 @@ button {
   border: 10px, solid, #000000;
 }
 
+.play {
+  display:inline-block;
+  position: relative;
+  font-size: 130%;
+  font-family: "Open Sans", sans-serif;
+  color: #f2f4f3;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 2px;
+  width: 50vw;
+  margin:30px;
+  height: auto;
+  padding-top: 0;
+  background-color: #6fa7fb;
+  border-radius: 100px;
+  transition: 1s;
+  cursor: pointer;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  border: 10px, solid, #000000;
+}
+
+.play-btn {
+    display: inline-block;
+    color: #fff;
+    padding: 12px 34px;
+    font-size: 14px;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    font-family: "Opem Sans", sans-serif;
+}
 #revisionModal {
   display: none;
   position: fixed;
@@ -103,9 +129,9 @@ button {
   font-size: large;
   padding: 10px;
   text-align: center;
-  border-radius: 20px;
-  border: 10px solid rgb(0, 0, 0);
-  background-color: #00440f;
+  border-radius: 15px;
+  border: 5px solid rgb(0, 0, 0);
+  background-color: #6fa7fb;
 }
 
 .modal-text {
@@ -115,7 +141,7 @@ button {
   font-family: "Open Sans", sans-serif;
 }
 
-#closeBtn {
+.closeBtn {
   display: inline-block;
   color: #fff;
   border: 1px solid;
@@ -128,6 +154,7 @@ button {
   transition: 1s;
   font-family: "Opem Sans", sans-serif;
 }
+
 
 .revision-list {
   margin-bottom: 25px;
@@ -142,19 +169,15 @@ button {
   text-align: center;
   margin-bottom: 5px;
   font-weight: bold;
-  color: #000000;
+  color: #fff;
   margin-top: 30px;
+  font-size: 1.5em;
 }
 
 .game-section {
   height: auto;
   width: auto;
   display: grid;
-  background-color: linear-gradient(
-    to right,
-    rgba(255, 0, 0, 0),
-    rgba(255, 0, 0, 1)
-  );
 }
 
 .memory-game {
@@ -253,6 +276,12 @@ button {
 .timer {
   position: relative;
   display: inline-block;
+  color:#fff;
+}
+.timer1 {
+    position: relative;
+    display: inline-block;
+    color: #fff;
 }
 
 .play-again {
@@ -364,7 +393,7 @@ footer {
   }
 
   .text-header,
-  .cover-text {
+  .cover-text .play{
     font-size: 1.5em;
     width: 80%;
     height: fit-content;
@@ -383,7 +412,7 @@ footer {
 
   .text-header,
   .cover-text,
-  button {
+  button .play{
     font-size: 2em;
     width: 80%;
     height: fit-content;
@@ -407,8 +436,8 @@ footer {
 
   .text-header,
   .cover-text,
-  button {
-    font-size: 1em;
+  button .play{
+    font-size: 2em;
     width: 80%;
     height: fit-content;
     margin-top: 10px;
@@ -431,7 +460,7 @@ footer {
 
   .text-header,
   .cover-text,
-  button {
+  button .play{
     font-size: 2em;
     width: 80%;
     height: fit-content;
@@ -450,7 +479,7 @@ footer {
 
   .text-header,
   .cover-text,
-  button {
+  button .play{
     font-size: 2em;
     width: 80%;
     height: fit-content;
@@ -469,7 +498,7 @@ footer {
 
   .text-header,
   .cover-text,
-  button {
+  button .play{
     font-size: 2em;
     width: 80%;
     height: fit-content;
@@ -488,7 +517,7 @@ footer {
 
   .text-header,
   .cover-text,
-  button {
+  button .play{
     font-size: 2em;
     width: 80%;
     height: fit-content;
