@@ -62,7 +62,7 @@ p {
   margin-bottom: 10px;
   color: #fefefe;
   border: 4px solid #fefefe;
-  background-color: rgb(63, 49, 74);
+  background-color: rgba(8, 95, 0, 0.6);
   border-radius: 10px;
 }
 
@@ -82,7 +82,7 @@ button {
   transition: 1s;
   cursor: pointer;
   box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
-  border: 5px, solid, #000000;
+  border: 10px, solid, #000000;
 }
 
 #revisionModal {
@@ -105,7 +105,7 @@ button {
   text-align: center;
   border-radius: 20px;
   border: 10px solid rgb(0, 0, 0);
-  background-color: #3f314a;
+  background-color: #00440f;
 }
 
 .modal-text {
@@ -177,7 +177,7 @@ button {
   transform: scale(1);
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  background-color: rgb(226, 241, 255);
+  background-color: #fefefe;
 }
 
 .card:active {
@@ -193,7 +193,6 @@ button {
 .back {
   width: 100%;
   height: 100%;
-  padding: 10px;
   position: absolute;
   border: 2px solid #000000;
   backface-visibility: hidden;
@@ -227,6 +226,10 @@ button {
   background-color: #f94144;
   color: azure;
 }
+#rain {
+    background-color: #4D908E;
+    color: azure
+}
 
 .score-timer-card {
   display: grid;
@@ -256,7 +259,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 #resetbutton {

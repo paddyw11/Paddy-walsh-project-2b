@@ -35,7 +35,12 @@ Find the live project [here](....)
 
 ### User Stories
 
-As a player of the game: - I want to have fun - I want to undertand how to be able to play the game - I want to be able to keep log of my score
+As a player of the game: 
+- I want to have fun
+- I want to learn the welsh words for different weathers
+- I want to undertand how to be able to play the game
+- I want to be able to keep log of my score and time
+- I want to be able to play again
 
 ## Design
 
@@ -61,13 +66,29 @@ As a player of the game: - I want to have fun - I want to undertand how to be ab
 
 ### Fonts
 
+- Open Sans, sans serif was used for simplistic design
+
 ### Colours
+
+-I decided on a palette of colours to make the game more pleasing and to add a connection between the pairs.  
+
 
 ## Features
 
 ### Existing Features
 
+- A simple and colorful page layout so users can easilty navigate to the relevant areas.
+- A "Play now button" - takes the user directly to the game area to begin playing.
+- A "Revise' section allows the user to revise the word pairings before playing.
+- The game board contains the card that the user must match to complete the game.
+- The number of moves and time taken area informs the user of their progress during game play.
+- A play again button allows the user to reset the board to re-start the game.
+- A congratulations modal informs the user of their completion of the game and infors them of their final number of moves and the complete game time.
+
 ### Future Features
+
+- Including a leader board to showcase the top scorers could be a fun feature for competetiveness.
+- Including an audio-off function as a harder test of memory.
 
 ## Technologies
 
