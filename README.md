@@ -26,6 +26,8 @@ Find the live project [here](....)
     - [Existing Features](#existing-features)
     - [Future Features](#future-features)
   - [Technologies](#technologies)
+    - [Languages](#languages)
+    - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
   - [Testing](#testing)
   - [Deployment](#deployment)
   - [Credits](#credits)
@@ -94,6 +96,26 @@ As a player of the game:
 - Including an audio-off function as a harder test of memory.
 
 ## Technologies
+
+### Languages
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JS](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks, Libraries and Programs Used
+- [Google Fonts](https://fonts.google.com/) I used this for the Open Sans font throughout the site.
+
+- [Tiny Png](https://tinypng.com/) This helped compress the images used on the site.
+
+- [Coolors](https://coolors.co/) This was used to find a color palette.
+
+- [Code Anywhere](https://app.codeanywhere.com/) - The IDE used to write code and commit to Github.
+
+- [Github](https://github.com/) - The repository sire used to store the project pushed from Code Anywhere and used to delpoy the sita via Github Pages.
+
+- [Chrome DevTools](https://developer.chrome.com/docs/devtools) - The built-in tool used to inspect the code, check for responsiveness and run performance tests.
+
+-
 
 ## Testing
 

@@ -1,43 +1,43 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
-  display: grid;
-  background-color: #74a7ff;
+    display: grid;
+    background-color: #74a7ff;
 }
 
 h1,
 h2,
 h3,
 p {
-  font-family: "Open Sans", "sans-serif";
-  color:#fff;
+    font-family: "Open Sans", "sans-serif";
+    color: #fff;
 }
 
 .top-section {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  text-align: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
 }
 
 .top-section::before {
-  content: " ";
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  background: url("../images/wellies.webp") no-repeat center center;
-  opacity: 0.3;
-  background-size: cover;
-  text-align: center;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+    content: " ";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/wellies.webp") no-repeat center center;
+    opacity: 0.3;
+    background-size: cover;
+    text-align: center;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 a {
@@ -45,59 +45,58 @@ a {
     color: #fff;
     text-align: center;
     margin: auto;
-    vertical-align: auto;
 }
 
 .text-header {
-  width: fit-content;
-  margin: auto;
-  text-align: center;
-  font-size: 2.5em;
-  font-family: "Open Sans", sans-serif;
-  padding-top: 5px;
-  font-weight: bold;
-  margin-bottom: 30px;
-  color: #fefefe;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    font-size: 2.5em;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 5px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fefefe;
 }
 
 button {
-  position: relative;
-  font-size: 130%;
-  font-family: "Open Sans", sans-serif;
-  color: #f2f4f3;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 2px;
-  width: 350px;
-  height: 80px;
-  padding-top: 0;
-  background-color: #6fa7fb;
-  border-radius: 100px;
-  transition: 1s;
-  cursor: pointer;
-  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
-  border: 10px, solid, #000000;
+    position: relative;
+    font-size: 130%;
+    font-family: "Open Sans", sans-serif;
+    color: #f2f4f3;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 350px;
+    height: 80px;
+    padding-top: 0;
+    background-color: #6fa7fb;
+    border-radius: 100px;
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border: 10px solid #000000;
 }
 
 .play {
-  display:inline-block;
-  position: relative;
-  font-size: 130%;
-  font-family: "Open Sans", sans-serif;
-  color: #f2f4f3;
-  font-weight: 900;
-  text-align: center;
-  letter-spacing: 2px;
-  width: 50vw;
-  margin:30px;
-  height: auto;
-  padding-top: 0;
-  background-color: #6fa7fb;
-  border-radius: 100px;
-  transition: 1s;
-  cursor: pointer;
-  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
-  border: 10px, solid, #000000;
+    display: inline-block;
+    position: relative;
+    font-size: 3em;
+    font-family: "Open Sans", sans-serif;
+    color: #f2f4f3;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 300px;
+    margin: 30px;
+    height: auto;
+    padding-top: 0;
+    background-color: #6fa7fb;
+    border-radius: 100px;
+    transition: 1s;
+    cursor: pointer;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+    border: 10px solid #000000;
 }
 
 .play-btn {
@@ -111,173 +110,187 @@ button {
     transition: 1s;
     font-family: "Opem Sans", sans-serif;
 }
+
 #revisionModal {
-  display: none;
-  position: fixed;
-  background-color: rgba(black, black, black, 0.7);
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .revision-wrapper {
-  display: inline-block;
-  font-size: large;
-  padding: 10px;
-  text-align: center;
-  border-radius: 15px;
-  border: 5px solid rgb(0, 0, 0);
-  background-color: #6fa7fb;
+    display: inline-block;
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    border: 5px solid rgb(0, 0, 0);
+    background-color: #6fa7fb;
 }
 
 .modal-text {
-  font-weight: 600;
-  margin-top: 1rem;
-  padding-bottom: 1rem;
-  font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Open Sans", sans-serif;
 }
 
 .closeBtn {
-  display: inline-block;
-  color: #fff;
-  border: 1px solid;
-  padding: 12px 34px;
-  font-size: 14px;
-  background: #3f314a;
-  position: relative;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-  font-family: "Opem Sans", sans-serif;
+    display: inline-block;
+    color: #fff;
+    border: 1px solid;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: #3f314a;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    font-family: "Opem Sans", sans-serif;
 }
 
 
 .revision-list {
-  margin-bottom: 25px;
-  color: #fff;
-  text-align: center;
-  padding: 0px 100px;
+    margin-bottom: 25px;
+    color: #fff;
+    text-align: center;
+    padding: 0px 100px;
 }
 
+.howto {
+    position: relative;
+    font-size: 2em;
+}
+
+/* section for game board*/
 .game-text {
-  float: left;
-  width: 100;
-  text-align: center;
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #fff;
-  margin-top: 30px;
-  font-size: 1.5em;
+    float: left;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 1.5em;
 }
 
 .game-section {
-  height: auto;
-  width: auto;
-  display: grid;
+    height: auto;
+    width: auto;
+    display: grid;
 }
 
 .memory-game {
-  width: 100%;
-  grid-template-columns: repeat(4, auto);
-  margin: auto;
-  display: grid;
-  flex-wrap: wrap;
-  border: 2px solid #025669;
-  perspective: 1000px;
-  justify-content: center;
+    width: 100%;
+    grid-template-columns: repeat(4, auto);
+    margin: auto;
+    display: grid;
+    flex-wrap: wrap;
+    border: 2px solid #025669;
+    perspective: 1000px;
+    justify-content: center;
 }
 
 .card {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  border: 2px solid #000000;
-  margin: 5px;
-  transform: scale(1);
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
-  background-color: #fefefe;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border: 2px solid #000000;
+    margin: 5px;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    background-color: #fefefe;
 }
 
 .card:active {
-  transform: scale(0.97);
-  transition: transform 0.2s;
+    transform: scale(0.97);
+    transition: transform 0.2s;
 }
 
 .card.flip {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .front,
 .back {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  border: 2px solid #000000;
-  backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid #000000;
+    backface-visibility: hidden;
 }
 
 .front {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 #snow {
-  background-color: #577590;
-  color: azure;
+    background-color: #577590;
+    color: azure;
 }
+
 #windy {
-  background-color: #90be6d;
-  color: azure;
+    background-color: #90be6d;
+    color: azure;
 }
+
 #stormy {
-  background-color: #f3722c;
-  color: azure;
+    background-color: #f3722c;
+    color: azure;
 }
+
 #sun {
-  background-color: #f9c74f;
-  color: azure;
+    background-color: #f9c74f;
+    color: azure;
 }
+
 #cloudy {
-  background-color: #90be6d;
-  color: azure;
+    background-color: #90be6d;
+    color: azure;
 }
+
 #hot {
-  background-color: #f94144;
-  color: azure;
+    background-color: #f94144;
+    color: azure;
 }
+
 #rain {
     background-color: #4D908E;
     color: azure
 }
 
 .score-timer-card {
-  display: grid;
-  float: left;
-  width: 100%;
-  text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  color: #000000;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
+    display: grid;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    color: #000000;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
 }
 
 .score-counter {
-  position: relative;
-  display: inline-block;
-  margin: 10px;
+    position: relative;
+    display: inline-block;
+    margin: 10px;
 }
 
 .timer {
-  position: relative;
-  display: inline-block;
-  color:#fff;
+    position: relative;
+    display: inline-block;
+    color: #fff;
 }
+
 .timer1 {
     position: relative;
     display: inline-block;
@@ -285,99 +298,99 @@ button {
 }
 
 .play-again {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
 #resetbutton {
-  padding: 10px 10px;
-  background-color: #000000;
-  color: white;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 10px;
-  transition: background-color 0.3s ease;
+    padding: 10px 10px;
+    background-color: #000000;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    transition: background-color 0.3s ease;
 }
 
 #resetbutton:hover {
-  background-color: grey;
+    background-color: grey;
 }
 
 /* congrats modal and background */
 #congratsBk {
-  visibility: hidden;
-  opacity: 0;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  opacity: 0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    opacity: 0;
 }
 
 .congrats_modal {
-  margin: 50px auto;
-  padding: 20px;
-  position: relative;
-  background: #fefefe;
-  border-radius: 5px;
-  left: 0;
-  top: 0;
-  width: 85%;
-  justify-content: center;
-  align-items: center;
-  transition: all 5s ease-in-out;
-  font-family: "Open Sans", sans-serif;
+    margin: 50px auto;
+    padding: 20px;
+    position: relative;
+    background: #fefefe;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s ease-in-out;
+    font-family: "Open Sans", sans-serif;
 }
 
 .congrats_modal h2 {
-  margin-top: 0;
-  color: #000000;
-  max-width: 90%;
-  text-align: center;
+    margin-top: 0;
+    color: #000000;
+    max-width: 90%;
+    text-align: center;
 }
 
 .show {
-  visibility: visible !important;
-  opacity: 100 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
 .congrats_modal .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #000000;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
 }
 
 .congrats_modal .time_score {
-  max-height: 30%;
-  overflow: auto;
-  text-align: center;
-  margin: 10px;
+    max-height: 30%;
+    overflow: auto;
+    text-align: center;
+    margin: 10px;
 }
 
 /* Footer*/
 footer {
-  background-color: #000000;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  margin-top: 20px;
-  display: inline;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    display: inline;
 }
 
 /* --------------------------MEDIA QUERIES --------------------*/
@@ -385,142 +398,143 @@ footer {
 /* Media query for max-width 1200px */
 
 @media only screen and (max-width: 1200px) {
-  /*body {
+
+    /*body {
         height:auto;
     }*/
-  .top-section {
-    height: 100vh;
-  }
+    .top-section {
+        height: 100vh;
+    }
 
-  .text-header,
-  .cover-text .play{
-    font-size: 1.5em;
-    width: 80%;
-    height: fit-content;
-    margin-top: 30px;
-  }
+    .text-header,
+    .cover-text .play {
+        font-size: 1.5em;
+        width: 80%;
+        height: fit-content;
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width: 900px) {
-  body {
-    height: auto;
-  }
+    body {
+        height: auto;
+    }
 
-  .top-section {
-    height: 100vh;
-  }
+    .top-section {
+        height: 100vh;
+    }
 
-  .text-header,
-  .cover-text,
-  button .play{
-    font-size: 2em;
-    width: 80%;
-    height: fit-content;
-    margin-top: 30px;
-  }
+    .text-header,
+    .cover-text,
+    button .play {
+        font-size: 2em;
+        width: 80%;
+        height: fit-content;
+        margin-top: 30px;
+    }
 }
 
 .card {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
 }
 
 @media only screen and (max-width: 750px) {
-  body {
-    height: auto;
-  }
+    body {
+        height: auto;
+    }
 
-  .top-section {
-    height: 100vh;
-  }
+    .top-section {
+        height: 100vh;
+    }
 
-  .text-header,
-  .cover-text,
-  button .play{
-    font-size: 2em;
-    width: 80%;
-    height: fit-content;
-    margin-top: 10px;
-  }
+    .text-header,
+    .cover-text,
+    button .play {
+        font-size: 2em;
+        width: 80%;
+        height: fit-content;
+        margin-top: 10px;
+    }
 
-  .card {
-    width: 120px;
-    height: 120px;
-  }
+    .card {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    height: auto;
-  }
+    body {
+        height: auto;
+    }
 
-  .top-section {
-    height: 100vh;
-  }
+    .top-section {
+        height: 100vh;
+    }
 
-  .text-header,
-  .cover-text,
-  button .play{
-    font-size: 2em;
-    width: 80%;
-    height: fit-content;
-    margin-top: 30px;
-  }
+    .text-header,
+    .cover-text,
+    button .play {
+        font-size: 2em;
+        width: 80%;
+        height: fit-content;
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
-  body {
-    height: auto;
-  }
+    body {
+        height: auto;
+    }
 
-  .top-section {
-    height: 100vh;
-  }
+    .top-section {
+        height: 100vh;
+    }
 
-  .text-header,
-  .cover-text,
-  button .play{
-    font-size: 2em;
-    width: 80%;
-    height: fit-content;
-    margin-top: 30px;
-  }
+    .text-header,
+    .cover-text,
+    button .play {
+        font-size: 2em;
+        width: 80%;
+        height: fit-content;
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width: 350px) {
-  body {
-    height: auto;
-  }
+    body {
+        height: auto;
+    }
 
-  .top-section {
-    height: 100vh;
-  }
+    .top-section {
+        height: 100vh;
+    }
 
-  .text-header,
-  .cover-text,
-  button .play{
-    font-size: 2em;
-    width: 80%;
-    height: fit-content;
-    margin-top: 30px;
-  }
+    .text-header,
+    .cover-text,
+    button .play {
+        font-size: 2em;
+        width: 80%;
+        height: fit-content;
+        margin-top: 30px;
+    }
 }
 
 @media only screen and (max-width: 300px) {
-  body {
-    height: auto;
-  }
+    body {
+        height: auto;
+    }
 
-  .top-section {
-    height: 100vh;
-  }
+    .top-section {
+        height: 100vh;
+    }
 
-  .text-header,
-  .cover-text,
-  button .play{
-    font-size: 2em;
-    width: 80%;
-    height: fit-content;
-    margin-top: 30px;
-  }
+    .text-header,
+    .cover-text,
+    button .play {
+        font-size: 2em;
+        width: 80%;
+        height: fit-content;
+        margin-top: 30px;
+    }
 }

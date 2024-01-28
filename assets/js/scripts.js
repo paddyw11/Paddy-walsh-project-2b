@@ -17,7 +17,10 @@ window.onload = initialiseBoard();
 revisionBtn.addEventListener("click", showRevisionModal); // listen for open click of revision modal
 closeBtn.addEventListener("click", closeRevisionModal); // listen for close revision modal button
 
-closeCongratsBtn.addEventListener("click", closeCongratsModal, resetBoard); // listen for click on close button for congrats modal
+closeCongratsBtn.addEventListener("click", () =>{
+    closeCongratsModal();
+    resetBoard(); // listen for click on close button for congrats modal
+});
 
 function showRevisionModal() {
   revisionModal.style.display = "block";
