@@ -19,7 +19,7 @@ p {
 
 .top-section {
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
     text-align: center;
 }
@@ -27,7 +27,6 @@ p {
 .top-section::before {
     content: " ";
     position: absolute;
-    height: 100vh;
     width: 100%;
     background: url("../images/wellies.webp") no-repeat center center;
     opacity: 0.3;
@@ -75,7 +74,7 @@ button {
     transition: 1s;
     cursor: pointer;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
-    border: 10px solid #000000;
+    border: 5px solid #000000;
 }
 
 .play {
@@ -96,7 +95,7 @@ button {
     transition: 1s;
     cursor: pointer;
     box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
-    border: 10px solid #000000;
+    border: 5px solid #000000;
 }
 
 .play-btn {
@@ -171,7 +170,6 @@ button {
 /* section for game board*/
 .game-text {
     float: left;
-    width: 80%;
     text-align: center;
     margin-bottom: 5px;
     font-weight: bold;
@@ -192,7 +190,7 @@ button {
     margin: auto;
     display: grid;
     flex-wrap: wrap;
-    border: 2px solid #025669;
+
     perspective: 1000px;
     justify-content: center;
 }
@@ -339,21 +337,23 @@ button {
     margin: 50px auto;
     padding: 20px;
     position: relative;
-    background: #fefefe;
-    border-radius: 5px;
+    background: #90be6d;
+    border-radius: 10px;
+    border: 5px solid #000000;
     left: 0;
     top: 0;
     width: 85%;
     justify-content: center;
     align-items: center;
-    transition: all 5s ease-in-out;
+    transition: all 3s ease-in-out;
     font-family: "Open Sans", sans-serif;
 }
 
 .congrats_modal h2 {
     margin-top: 0;
-    color: #000000;
+    color: #fff;
     max-width: 90%;
+    transform: translateX(5%);
     text-align: center;
 }
 
@@ -403,7 +403,7 @@ footer {
         height:auto;
     }*/
     .top-section {
-        height: 100vh;
+        height: auto;
     }
 
     .text-header,
@@ -421,7 +421,7 @@ footer {
     }
 
     .top-section {
-        height: 100vh;
+        height: auto;
     }
 
     .text-header,
@@ -445,7 +445,7 @@ footer {
     }
 
     .top-section {
-        height: 100vh;
+        height: auto;
     }
 
     .text-header,
@@ -469,7 +469,7 @@ footer {
     }
 
     .top-section {
-        height: 100vh;
+        height: auto;
     }
 
     .text-header,
@@ -488,7 +488,7 @@ footer {
     }
 
     .top-section {
-        height: 100vh;
+        height: auto;
     }
 
     .text-header,
@@ -507,7 +507,7 @@ footer {
     }
 
     .top-section {
-        height: 100vh;
+        height: auto;
     }
 
     .text-header,
@@ -526,7 +526,7 @@ footer {
     }
 
     .top-section {
-        height: 100vh;
+        height: auto;
     }
 
     .text-header,

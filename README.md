@@ -6,7 +6,7 @@ SMTH requires users to remember the position and the translation of the respecti
 
 ### Live project
 
-Find the live project [here](....)
+Find the live project [here](https://paddyw11.github.io/Paddy-walsh-project-2b/) DON'T FORGET TO update below also!
 
 ## Contents
 
@@ -29,15 +29,20 @@ Find the live project [here](....)
     - [Languages](#languages)
     - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
   - [Testing](#testing)
+    - [Validator Testing](#validator-testing)
   - [Deployment](#deployment)
+    - [How this site can be deployed](#how-this-site-can-be-deployed)
+    - [How this site can be deployed](#how-this-site-can-be-deployed-1)
   - [Credits](#credits)
     - [Media](#media)
+    - [Acknowledgements](#acknowledgements)
 
 ## UX
 
 ### User Stories
 
-As a player of the game: 
+As a player of the game:
+
 - I want to have fun
 - I want to learn the welsh words for different weathers
 - I want to undertand how to be able to play the game
@@ -51,19 +56,27 @@ As a player of the game:
 #### Desktop view
 
 <p align="center">
-<img src="" width="600" height="1000">
+<img src="assets/images/readme/wfdesktop.png" width="600" height="1000">
+</p>
+
+<p align="center">
+<img src="assets/images/readme/wfdesktopcongrats.png" width="600" height="1000">
 </p>
 
 #### Tablet view
 
 <p align="center">
-<img src="" width="500" height="1100">
+<img src="assets/images/readme/wftablet.png" width="500" height="1100">
 </p>
 
 #### Mobile view
 
 <p align="center">
-<img src="" width="300" height="1100">
+<img src="assets/images/readme/wfmobile.png" width="300" height="1100">
+</p>
+
+<p align="center">
+<img src="assets/images/readme/wfmobilerevise.png" width="300" height="1100">
 </p>
 
 ### Fonts
@@ -74,9 +87,9 @@ As a player of the game:
 
 ![color palette]("assets/images/palette.png)
 
--I decided on a palette of colours to be used on the game board to make the game more pleasing and to add a connection between the pairs. -  Sourced from Coolors.
+-I decided on a palette of colours to be used on the game board to make the game more pleasing and to add a connection between the pairs. - Sourced from Coolors.
 
-- **#74a7ff** - Body background colour. It serves as a cloudless sky. 
+- **#74a7ff** - Body background colour. It serves as a cloudless sky.
 
 ## Features
 
@@ -98,11 +111,13 @@ As a player of the game:
 ## Technologies
 
 ### Languages
+
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 - [JS](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Programs Used
+
 - [Google Fonts](https://fonts.google.com/) I used this for the Open Sans font throughout the site.
 
 - [Tiny Png](https://tinypng.com/) This helped compress the images used on the site.
@@ -115,16 +130,59 @@ As a player of the game:
 
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools) - The built-in tool used to inspect the code, check for responsiveness and run performance tests.
 
--
+- [Balsamiq](https://balsamiq.com/) was used to create the wireframes at the design stage of the site.
+
+- [Beautify](<https://www.jpkc.com/tools/beautify/) was used to tidy up HTML, CSS and JS files.
 
 ## Testing
 
+### Validator Testing
+
+- [HTML Validator](https://validator.w3.org)
+  - Result for index.html
+  - ![index.html](assets/images/readme/testing/hmlvalidator.png)
+
+- [CSS Validator](https://jigsaw.w3.org/css-validator/validator)
+  - Result for style.css
+  - ![style.css](assets/images/readme/testing/cssvalidator.png)
+
+- [JS Validator](https://jigsaw.w3.org/css-validator/validator)
+  - Result for style.css
+  - ![script.js](assets/images/readme/testing/jshintvalidator.png)
+
 ## Deployment
+
+### How this site can be deployed
+
+- In the Github repository, navigate to the Settings tab, then choose pages from the left hand menu.
+- From the build and deployment section ensure the source drop-down menu is showing deploy from a branch and the branch drop down is showing main, next click save and allow the page to refesh to deploy the page.
+
+- Any changes now pushed to the master branch will be evident on the deployed page.
+
+The deployed site can be found [here](https://paddyw11.github.io/Paddy-walsh-project-2b/)
+
+### How this site can be deployed
+
+- Log into Github or set up a new account.
+- Navigate to the repository [here](https://github.com/paddyw11/Paddy-walsh-project-2b)
+- Click on the code button, select whether to clone with HTTPS, SSH or Github CLI and copy the link shown.
+- Open a terminal in a new IDE workspace where you wish to clone the repository to.
+- Type 'git clone' into the terminal and paste the link copied from the original source repository and press the Enter key to begin the clone process.
 
 ## Credits
 
 A number of resources were used to assist in the understandig of using HTML, CSS and Javascript to create a flip card memory game.
-I used a walkthrough to log the basics, namely 
+I used a walkthrough to log the basics, namely
+
 ### Media
 
-[Pixabay](https://pixabay.com/) for the card images
+- The fonts were imported from [Google Fonts](https"//fonts.google.com/)
+
+- All images were downloaded from [Pixabay](https://pixabay.com/) for the card images.
+
+### Acknowledgements
+
+- I would like to thank:
+  - My Code Institute Mentor and Cohort Supervisor, []() and []() respectively who have provided great advice and feedback on how to plan and execute this project.
+  - Danny Walsh and James Walsh for their late-night game feedback.
+  - Finally, Kim Dodd on her UX prowess.
