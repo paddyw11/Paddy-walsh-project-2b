@@ -32,7 +32,7 @@ Find the live project [here](https://paddyw11.github.io/Paddy-walsh-project-2b/)
     - [Validator Testing](#validator-testing)
   - [Deployment](#deployment)
     - [How this site can be deployed](#how-this-site-can-be-deployed)
-    - [How this site can be deployed](#how-this-site-can-be-deployed-1)
+    - [How this site can be cloned](#how-this-site-can-be-cloned)
   - [Credits](#credits)
     - [Media](#media)
     - [Acknowledgements](#acknowledgements)
@@ -43,11 +43,11 @@ Find the live project [here](https://paddyw11.github.io/Paddy-walsh-project-2b/)
 
 As a player of the game:
 
-- I want to have fun
-- I want to learn the welsh words for different weathers
-- I want to undertand how to be able to play the game
-- I want to be able to keep log of my score and time
-- I want to be able to play again
+- I want to have fun.
+- I want to learn the welsh words for different weathers.
+- I want to undertand how to be able to play the game.
+- I want to be able to keep log of my score and time.
+- I want to be able to play again.
 
 ## Design
 
@@ -60,23 +60,23 @@ As a player of the game:
 </p>
 
 <p align="center">
-<img src="assets/images/readme/wfdesktopcongrats.png" width="600" height="1000">
+<img src="assets/images/readme/wfdesktopcongrats.png" width="600" height="900">
 </p>
 
 #### Tablet view
 
 <p align="center">
-<img src="assets/images/readme/wftablet.png" width="500" height="1100">
+<img src="assets/images/readme/wftablet.png" width="500" height="900">
 </p>
 
 #### Mobile view
 
 <p align="center">
-<img src="assets/images/readme/wfmobile.png" width="300" height="1100">
+<img src="assets/images/readme/wfmobile.png" width="300" height=900">
 </p>
 
 <p align="center">
-<img src="assets/images/readme/wfmobilerevise.png" width="300" height="1100">
+<img src="assets/images/readme/wfmobilerevise.png" width="300" height="900">
 </p>
 
 ### Fonts
@@ -150,6 +150,10 @@ As a player of the game:
   - Result for style.css
   - ![script.js](assets/images/readme/testing/jshintvalidator.png)
 
+- [WAVE Validator](https://jigsaw.w3.org/css-validator/validator)
+  - Result for site
+  - ![Site](assets/images/readme/testing/wavevalidator.png)
+
 ## Deployment
 
 ### How this site can be deployed
@@ -161,7 +165,7 @@ As a player of the game:
 
 The deployed site can be found [here](https://paddyw11.github.io/Paddy-walsh-project-2b/)
 
-### How this site can be deployed
+### How this site can be cloned
 
 - Log into Github or set up a new account.
 - Navigate to the repository [here](https://github.com/paddyw11/Paddy-walsh-project-2b)
