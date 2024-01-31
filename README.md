@@ -34,6 +34,9 @@ Find the live project [here](https://paddyw11.github.io/Paddy-walsh-project-2b/)
     - [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
   - [Testing](#testing)
     - [Validator Testing](#validator-testing)
+    - [User Stories Testing](#user-stories-testing)
+      - [Game Player User](#game-player-user-1)
+    - [Accessibility Testing](#accessibility-testing)
   - [Deployment](#deployment)
     - [How this site can be deployed](#how-this-site-can-be-deployed)
     - [How this site can be cloned](#how-this-site-can-be-cloned)
@@ -48,27 +51,31 @@ Find the live project [here](https://paddyw11.github.io/Paddy-walsh-project-2b/)
 ### Project Goals
 
 - The goal of the project is to make a fun and educational game that will help the user to learn the weather types in the Welsh language.
- 
 
 ### User Stories
+
 #### Game Player User
+
 |Story Number|Story|
 | :------: | ------ |
 |1| As a player of the game, <br> I want to be able to know how to play the game <br> so that I can complete it. <br><br> I know this is met when I understand how to play. |
 |2| As a player of the game, <br> I want to be able to revise the welsh words for the weathers<br> so that I can complete it well. <br><br> I know this is met when I see the translations modal and understand the welsh translations. |
 |3| As a player of the game, <br> I want to be able to know my ongoing score and my current time <br> so that I can keep a track. <br><br> I know this is met when I see the score and timer box. |
-|4| As a player of the game, <br> I want to be able to hear an audio hint when i turn over an image card <br> so that I can learn the translation better. <br><br> I know this is met when I hear the word of the corresponding image. |
+|4| As a player of the game, <br> I want to be able to hear an audio hint when I turn over an image card <br> so that I can learn the translation better. <br><br> I know this is met when I hear the word of the corresponding image. |
 |5| As a player of the game, <br> I want to be able to know when I have matched a pair on the game <br> so that I can celebrate and carry on to other cards. <br><br> I know this is met when I see the matching pair stay showing. |
 |6| As a player of the game, <br> I want to be able to know when I have completed the game <br> so that I can celebrate. <br><br> I know this is met when I see the well-done box with score and timer. |
-|7| As a player of the game, <br> I want to be able to play again <br> so that I can beat my last score. <br><br> I know this is met i have clicked the play again button and the game resets. |
+|7| As a player of the game, <br> I want to be able to play again <br> so that I can beat my last score. <br><br> I know this is met I have clicked the play again button and the game resets. |
 
 ***
 
 ## Design
 
 ### Wireframes
-Below are the wireframes that show the layou  of the site and its features 
+
+Below are the wireframes that show the layout of the site and its features.
+
 #### Desktop view
+
 <details><summary> Click here to see the desktop wireframe.</summary>
 
 ![Desktop View](assets/readme/wireframes/wfdesktop.png)
@@ -98,60 +105,63 @@ Below are the wireframes that show the layou  of the site and its features
 ![Desktop View](assets/readme/wireframes/wfmobilerevise.png)
 </details><br>
 
-
 ### Fonts
 
 - Google Fonts Open Sans, sans serif was used across the site for simplistic design.
- 
+
  ![Font Example 1](assets/readme/fonts/font1.PNG)<br>
  ![Font Example 1](assets/readme/fonts/font2.PNG)<br>
  ![Font Example 1](assets/readme/features/playagain.PNG)
 
 ### Colours
 
- ![color palette](assets/readme/palette.png)
+    I decided on a palette of colours to be used on the game board to make the game more pleasing and to add a connection between the pairs. - Sourced from Coolors.
 
-     I decided on a palette of colours to be used on the game board to make the game more pleasing and to add a connection between the pairs. - Sourced from Coolors.
+![color palette](assets/readme/palette.png)
 
-- **#74a7ff** - Body background colour. It serves as a cloudless sky.
 
+ **#74a7ff** - Body background colour. It serves as a nod to a cloudless sky.
 
 ## Features
 
 ### Existing Features
 
-- A simple and colorful page layout so users can easilty navigate to the relevant areas.
+A simple and colorful page layout so users can easilty navigate to the relevant areas.
 
    ![Top Section](assets/readme/features/f01.PNG)
 
-- A "Play now" button takes the user directly to the game area viewport to begin playing.
+A "Play now" button takes the user directly to the game area viewport to begin playing.
 
    ![Play Now Button](assets/readme/features/playnow.PNG)
 
-- A "Revise" button and modal button allows the user to revise the word pairings before playing.
+A "Revise" button and modal button allows the user to revise the word pairings before playing.
 
    ![Revise Button](assets/readme/features/revise.PNG)
 
    ![Revise Modal](assets/readme/features/revisemd.PNG)
 
-- The game board contains the cards that the user must match to complete the game.
+The game board contains the cards that the user must match to complete the game.
+The elements/cards contain images which on click reverse to show their back side. The defualt 'front' side shows the umberlla image.
 
-   ![color palette](assets/readme/features/gameboard.PNG)
-- The number of moves and time taken area informs the user of their progress during game play.
-  - ![color palette]("assets/images/palette.png)
+   ![Game Board](assets/readme/features/gameboard.PNG)
 
-- A play again button allows the user to reset the board to re-start the game.
-  - ![color palette]("assets/images/palette.png)
+The number of moves and time taken area informs the user of their progress during game play.
+   
+   ![Score Card](assets/readme/features/scorecard.PNG)
 
-- A congratulations modal informs the user of their completion of the game and infors them of their final number of moves and the complete game time.
-  - ![color palette]("assets/images/palette.png)
+ A play again button allows the user to reset the board to re-start the game.
+   
+   ![Play Again](assets/readme/features/playagain.PNG)
+
+ A congratulations modal informs the user of their completion of the game and infors them of their final number of moves and the complete game time.
+   
+   ![Congrats Modal](assets/readme/features/congratsmd.PNG)
 
 ### Future Features
 
 - Including a leader board to showcase the top scorers could be a fun feature for competetiveness.
 - Including an 'audio-off' function to increase difficulty.
-- Inluding a 'Remove Colour' option for a harder test of memory.
-
+- Inlcuding a 'Remove Colour' option for a harder test of memory.
 
 ## Technologies
 
@@ -206,6 +216,46 @@ Below are the wireframes that show the layou  of the site and its features
    Result for site
   
 ![Site](assets/readme/testing/wavevalidator.png)
+
+### User Stories Testing
+
+#### Game Player User
+
+|Story No.|Result|Story/ Evidence|
+|-----|-----|-----
+|1| Test Pass | As a player of the game, <br> I want to be able to know how to play the game <br> so that I can complete it. <br><br> I know this is met when I understand how to play. <br><br> Evidence:<br>The example of matched pairs image makes clear what is expected when matching a pair.<br> ![Example Board](assets/readme/features/example.PNG)|
+|2| Test Pass | As a player of the game, <br> I want to be able to revise the welsh words for the weathers<br> so that I can complete it well. <br><br> I know this is met when I see the translations modal and understand the welsh translations. <br><br>Evidence: <br>![Revise Modal](assets/readme/features/revisemd.PNG) |
+|3| Test Pass | As a player of the game, <br> I want to be able to know my ongoing score and my current time <br> so that I can keep a track. <br><br> I know this is met when I see the score and timer box. <br><br>Evidence: <br>![Score Card](assets/readme/features/scorecard.PNG)  |
+|4| Test Pass | As a player of the game, <br> I want to be able to hear an audio hint when I turn over an image card <br> so that I can learn the translation better. <br><br> I know this is met when I hear the word of the corresponding image. <br><br>Evidence: The respective audio file plays on activation of the image cards.|
+|5| Test Pass | As a player of the game, <br> I want to be able to know when I have matched a pair on the game <br> so that I can celebrate and carry on to other cards. <br><br> I know this is met when I see the matching pair stay showing. <br><br>Evidence: <br>![Matching Pair](assets/readme/features/example.PNG)  |
+|6| Test Pass | As a player of the game, <br> I want to be able to know when I have completed the game <br> so that I can celebrate. <br><br> I know this is met when I see the well-done box with score and timer. <br><br>Evidence: <br>![Congrats Modal](assets/readme/features/congratsmd.PNG)  |
+|7| | As a player of the game, <br> I want to be able to play again <br> so that I can beat my last score. <br><br> I know this is met I have clicked the play again button and the game resets. <br><br>Evidence: <br>![Play Again](assets/readme/features/playagain.PNG) ![Score Card Reset](assets/readme/features/scorecardreset.png) |
+
+### Accessibility Testing
+
+To check the colours and fonts, I used the Lighthouse tool in Google Chrom's devtools. The result of the game site is below:
+![Lighthouse Result](assets/readme/testing/lighthouse.png)
+
+### Manual Testng
+- I have tested that this page works in different web browsers.
+- I have tested that the site is responsive and works with different device sizes. It looks good and functions as normal.
+- I have tested that all text and fonts are readable and easy to understand.
+- I have tested all buttons. They action the correct response, which is either to open a modal, navigate to user to a view port or reset the game board and timer. 
+- I have tested that the cards on the game board flip when clicked and don't flip when two are already flipped or it has been matched. 
+- I have tested the audio files play when the image cards are clicked.
+- I have tested the score feature to increase ever time a pair is flipped. 
+- I have tested the timer begins on the first pair flip. 
+- I have tested the congratulations unction appears when all the pairs have been matched and it diplays the score and time at teh point of completing. 
+- I have tested the Play again button to ensure it resets the board, randomises the locations and resets the timer and score. 
+
+Below is an example of some features on different broswers. 
+
+|Safari 15.6|Firefox 103.0.2|Chrome 106.0.5249.61|
+| ----- | ----- | ----- |
+|![safari index page](/)|![firefox index page](assets/media/)|![chrome index page](assets/media/)|
+|![safari game modal page](assets/media/)|![firefox game modal page](assets/media/)|![chrome game modal page](assets/media/)|
+|![safari play game](assets/media)|![firefox play gamepage](assets/media/|![chrome play game page](assets/media/)|
+|![safari high score modal](assets/media/)|![firefox high score modal](assets/media/)|![chrome high score modal](assets/media/)|
 
 ***
 
