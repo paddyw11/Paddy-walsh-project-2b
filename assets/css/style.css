@@ -5,7 +5,7 @@
 }
 
 body {
-    display: grid;
+    display: block;
     background-color: #0A64FF;
 }
 
@@ -165,9 +165,14 @@ button {
 
 .howto {
     position: relative;
-    font-size: 2em;
+    display: block;
+    font-size: 1.8em;
+    max-width:100%;
 }
 
+.howto img {
+    max-width: 100%;
+}
 /* section for game board*/
 .game-text {
     float: left;
@@ -403,9 +408,6 @@ footer {
 
 @media only screen and (max-width: 1200px) {
 
-    /*body {
-        height:auto;
-    }*/
     .top-section {
         height: auto;
     }
@@ -420,21 +422,22 @@ footer {
 }
 
 @media only screen and (max-width: 900px) {
-    body {
-        height: auto;
-    }
-
+    
     .top-section {
         height: auto;
     }
 
     .text-header,
     .cover-text,
-    button .play {
-        font-size: 2em;
-        width: 80%;
+    button, .play {
+        font-size: 1.8em;
+        width: 55%;
         height: fit-content;
         margin-top: 30px;
+    }
+
+    h3, h4{
+        font-size: 1em;
     }
 }
 
@@ -444,101 +447,111 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
-    body {
-        height: auto;
-    }
-
+    
     .top-section {
         height: auto;
     }
-
+    .card {
+        width:130px;
+        height: 130px;
+    }
     .text-header,
     .cover-text,
-    button .play {
-        font-size: 2em;
-        width: 80%;
+    button, .play {
+        font-size: 1.6em;
+        width: 70%;
         height: fit-content;
         margin-top: 10px;
     }
-
-    .card {
-        width: 120px;
-        height: 120px;
+    h3, h4 {
+        font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        height: auto;
-    }
-
+    
     .top-section {
         height: auto;
     }
-
+    .card {
+        width: 100px;
+        height: 100px;
+    }
     .text-header,
     .cover-text,
-    button .play {
-        font-size: 2em;
-        width: 80%;
+    button,.play {
+        font-size: 1.4em;
+        width: 65%;
         height: fit-content;
         margin-top: 30px;
+    }
+    h3, h4 {
+        font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 450px) {
-    body {
-        height: auto;
-    }
-
+    
     .top-section {
         height: auto;
     }
-
+    .card {
+        width: 80px;
+        height: 80px;
+    }
     .text-header,
     .cover-text,
-    button .play {
-        font-size: 2em;
-        width: 80%;
+    button, .play {
+        font-size: 1.3em;
+        width: 55%;
         height: fit-content;
         margin-top: 30px;
+    }
+    h3, h4 {
+        font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 350px) {
-    body {
-        height: auto;
-    }
-
+    
     .top-section {
         height: auto;
     }
-
+    .card {
+        width: 70px;
+        height: 70px;
+    }
     .text-header,
     .cover-text,
-    button .play {
-        font-size: 2em;
-        width: 80%;
+    button, .play {
+        font-size: 1.2em;
+        width: 50%;
         height: fit-content;
         margin-top: 30px;
+    }
+    h3, h4 {
+        font-size: 1em;
     }
 }
 
 @media only screen and (max-width: 300px) {
-    body {
-        height: auto;
-    }
-
+    
     .top-section {
         height: auto;
     }
-
+    .card {
+        width: 60px;
+        height: 60px;
+    }
     .text-header,
     .cover-text,
-    button .play {
-        font-size: 2em;
-        width: 80%;
+    button, .play {
+        font-size: 1em;
+        width: 40%;
         height: fit-content;
         margin-top: 30px;
+    }
+    h3, h4 {
+        font-size: .8em;
     }
 }
