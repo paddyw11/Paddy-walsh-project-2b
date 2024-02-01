@@ -37,6 +37,9 @@ Find the live project [here](https://paddyw11.github.io/Paddy-walsh-project-2b/)
     - [User Stories Testing](#user-stories-testing)
       - [Game Player User](#game-player-user-1)
     - [Accessibility Testing](#accessibility-testing)
+    - [Manual Testng](#manual-testng)
+      - [Chrome for Android](#chrome-for-android)
+      - [Safari for iPhone](#safari-for-iphone)
   - [Deployment](#deployment)
     - [How this site can be deployed](#how-this-site-can-be-deployed)
     - [How this site can be cloned](#how-this-site-can-be-cloned)
@@ -250,12 +253,26 @@ To check the colours and fonts, I used the Lighthouse tool in Google Chrom's dev
 
 Below is an example of some features on different broswers. 
 
-|Safari 15.6|Firefox 103.0.2|Chrome 106.0.5249.61|
+|Safari 15.6|Firefox 122.0|Chrome 121.0.6167.140|
 | ----- | ----- | ----- |
-|![safari index page](/)|![firefox index page](assets/media/)|![chrome index page](assets/media/)|
-|![safari game modal page](assets/media/)|![firefox game modal page](assets/media/)|![chrome game modal page](assets/media/)|
-|![safari play game](assets/media)|![firefox play gamepage](assets/media/|![chrome play game page](assets/media/)|
-|![safari high score modal](assets/media/)|![firefox high score modal](assets/media/)|![chrome high score modal](assets/media/)|
+|![safari home page](/)|![firefox home page](assets/readme/testing/firefox_images/firefox_game.png)|![chrome home page](assets/readme/testing/chrome_images/chrome_game.png)|
+|![safari revision modal page](assets/readme/testing//)|![firefox revision modal page](assets/readme/testing/firefox_images/firefox_revise.png)|![chrome revision modal page](assets/readme/testing/chrome_images/chrome_revise.png)|
+|![safari game board](assets/readme/testing/)|![firefox game board](assets/readme/testing/firefox_images/firefox_game_board.png)|![chrome game board](assets/readme/testing/chrome_images/chrome_game_board.png)|
+|![safari score modal](assets/readme/testing/firefox_congrats.png)|![firefox score modal](assets/readme/testing/firefox_images/firefox_congrats.png)|![chrome score modal](assets/readme/testing/chrome_images/chrome_congrats.png)|
+
+#### Chrome for Android
+
+![Android home page](assets/readme/testing/android_images/android_game.png)
+![Android revision modal page](assets/readme/testing/android_images/android_revise.png)
+![Android game board](assets/readme/testing/android_images/android_game_board.png)
+![Android score modal](assets/readme/testing/android_images/android_congrats.png)
+
+#### Safari for iPhone
+
+![Android home page](assets/readme/testing/)
+![Android revision modal page](assets/readme/testing/)
+![Android game board](assets/readme/testing/)
+![Android score modal](assets/readme/testing/)
 
 ***
 
