@@ -1,5 +1,5 @@
 /* jshint esversion: 8 */
-var cards = document.querySelectorAll(".card");
+let cards = document.querySelectorAll(".card");
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -110,10 +110,10 @@ function moveCounter() {
 }
 
 // timer
-var second = 0,
+let second = 0,
     minute = 0;
-var timer = document.querySelector(".timer");
-var interval;
+let timer = document.querySelector(".timer");
+let interval;
 
 function startTimer() {
     interval = setInterval(function () {
