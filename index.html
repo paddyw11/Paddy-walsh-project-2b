@@ -1,180 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A flip card memory game to test and learn the welsh names for different weather types.">
-    <title>Sut mae'r tywydd heddiw?</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/css/style.css?v=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b45e489d19.js" crossorigin="anonymous"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"
+            content="A flip card memory game to test and learn the welsh names for different weather types.">
+        <title>Sut mae'r tywydd heddiw?</title>
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="assets/css/style.css?v=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b45e489d19.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-    <div class="top-section">
-        <h1 class="text-header">
-            Sut mae'r tywydd heddiw? /<br>
-            What is the weather today?
-        </h1>
-        <span id="playbtn" class="play"><a href="#play-the-game">Play Now!</a>
-        </span>
-        <!-- section for revision block -->
-        <span id="revisionBtn" class="play top-buttons">Revise</span>
-        <div id="revisionModal">
-            <div class="revision-wrapper">
-                <div class="modal-text">
-                    <div class="revision-list">
-                        <p>Sunny - Heulog</p>
-                        <br>
-                        <p>Cloudy - Cymylog</p>
-                        <br>
-                        <p>Rainbow - Enfys</p>
-                        <br>
-                        <p>Rain - Bwrw glaw</p>
-                        <br>
-                        <p>Snow - Bwrw eira</p>
-                        <br>
-                        <p>Stormy - Stormus</p>
-                        <br>
-                        <p>Windy - Gwyntog</p>
-                        <br>
-                        <p>Hot - Poeth</p>
+    <body>
+        <div class="top-section">
+            <h1 class="text-header">
+                Sut mae'r tywydd heddiw? /<br>
+                What is the weather today?
+            </h1>
+            <span id="playbtn" class="play"><a href="#play-the-game">Play Now!</a>
+            </span>
+            <!-- section for revision block -->
+            <span id="revisionBtn" class="play top-buttons">Revise</span>
+            <div id="revisionModal">
+                <div class="revision-wrapper">
+                    <div class="modal-text">
+                        <div class="revision-list">
+                            <p>Sunny - Heulog</p>
+                            <br>
+                            <p>Cloudy - Cymylog</p>
+                            <br>
+                            <p>Rainbow - Enfys</p>
+                            <br>
+                            <p>Rain - Bwrw glaw</p>
+                            <br>
+                            <p>Snow - Bwrw eira</p>
+                            <br>
+                            <p>Stormy - Stormus</p>
+                            <br>
+                            <p>Windy - Gwyntog</p>
+                            <br>
+                            <p>Hot - Poeth</p>
+                        </div>
                     </div>
+                    <span id="closeBtn" class="closeBtn">Close</span>
                 </div>
-                <span id="closeBtn" class="closeBtn">Close</span>
+            </div>
+            <div id="howto" class="howto">
+                <p>Find the matching weather image to the correct Welsh word.</p>
+                <br>
+                <h4>See an example of a matched pair below</h4>
+                <br>
+                <img src="assets/images/howto.png" alt="game example">
             </div>
         </div>
-        <div id="howto" class="howto">
-            <p>Find the matching weather image to the correct Welsh word.</p>
-            <br>
-            <h4>See an example of a matched pair below</h4>
-            <br>
-            <img src="assets/images/howto.png" alt="game example">
-        </div>
-    </div>
-
-    <!-- section for game block -->
-    <div class="game-section">
-        <div class="game-text">
-            <h2 id="play-the-game">Play the Game</h2>
-            <br>
-            <h3>
-                Test yourself to see if you can remember the weather type and its
-                matching Welsh word!
-            </h3>
-            <br>
-            <h4>Turn on your audio for a hint on the image tiles. <i class="fa-solid fa-volume-high"></i></h4>
-            <br>
-        </div>
-        <div class="memory-game">
-            <div class="card" data-weather="cloudy">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" id="cloudy" src="assets/images/game/cloudy.png" alt="Cloudy">
-                <audio id="cylmylog" src="assets/audio/cymylog.mp4"></audio>
+        <!-- section for game block -->
+        <div class="game-section">
+            <div class="game-text">
+                <h2 id="play-the-game">Play the Game</h2>
+                <br>
+                <h3>
+                    Test yourself to see if you can remember the weather type and its
+                    matching Welsh word!
+                </h3>
+                <br>
+                <h4>Turn on your audio for a hint on the image tiles. <i class="fa-solid fa-volume-high"></i></h4>
+                <br>
             </div>
-            <div class="card" data-weather="hot">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" id="hot" src="assets/images/game/hot.png" alt="red thermometer and sun symbol">
-                <audio id="poeth" src="assets/audio/poeth.mp4"></audio>
-            </div>
-            <div class="card" data-weather="rain">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" id="rain" src="assets/images/game/rain.png" alt="Rain cloud">
-                <audio src="assets/audio/bwrwglaw.mp4"></audio>
-            </div>
-            <div class="card" data-weather="rainbow">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/rainbow.png" alt="Rainbow">
-                <audio src="assets/audio/enfys.mp4"></audio>
-            </div>
-            <div class="card" data-weather="snow">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" id="snow" src="assets/images/game/snow.png" alt="Snow cloud">
-                <audio src="assets/audio/bwrweira.mp4"></audio>
-            </div>
-            <div class="card" data-weather="stormy">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" id="stormy" src="assets/images/game/stormy.png" alt="Storm cloud">
-                <audio src="assets/audio/stormus.mp4"></audio>
-            </div>
-            <div class="card" data-weather="sunny">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" id="sun" src="assets/images/game/sun.png" alt="Sun">
-                <audio src="assets/audio/heulog.mp4"></audio>
-            </div>
-            <div class="card" data-weather="windy">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" id="windy" src="assets/images/game/windy.png" alt="Windy cloud">
-                <audio src="assets/audio/gwyntog.mp4"></audio>
-            </div>
-            <div class="card" data-weather="stormy">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/stormus.png" alt="Stormus">
-            </div>
-            <div class="card" data-weather="hot">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/poeth.png" alt="Poeth">
-            </div>
-            <div class="card" data-weather="rainbow">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/enfys.png" alt="Enfys">
-            </div>
-            <div class="card" data-weather="sunny">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/heulog.png" alt="heulog">
-            </div>
-            <div class="card" data-weather="windy">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/gwyntog.png" alt="Gwyntog">
-            </div>
-            <div class="card" data-weather="cloudy">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/cymylog.png" alt="Cymylog">
-            </div>
-            <div class="card" data-weather="rain">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/bwrwglaw.png" alt="Bwrw Glaw">
-            </div>
-            <div class="card" data-weather="snow">
-                <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
-                <img class="front" src="assets/images/game/bwrweira.png" alt="Bwrw Eira">
+            <div class="memory-game">
+                <div class="card" data-weather="cloudy">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" id="cloudy" src="assets/images/game/cloudy.png" alt="Cloudy">
+                    <audio id="cylmylog" src="assets/audio/cymylog.mp4"></audio>
+                </div>
+                <div class="card" data-weather="hot">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" id="hot" src="assets/images/game/hot.png" alt="red thermometer and sun symbol">
+                    <audio id="poeth" src="assets/audio/poeth.mp4"></audio>
+                </div>
+                <div class="card" data-weather="rain">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" id="rain" src="assets/images/game/rain.png" alt="Rain cloud">
+                    <audio src="assets/audio/bwrwglaw.mp4"></audio>
+                </div>
+                <div class="card" data-weather="rainbow">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/rainbow.png" alt="Rainbow">
+                    <audio src="assets/audio/enfys.mp4"></audio>
+                </div>
+                <div class="card" data-weather="snow">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" id="snow" src="assets/images/game/snow.png" alt="Snow cloud">
+                    <audio src="assets/audio/bwrweira.mp4"></audio>
+                </div>
+                <div class="card" data-weather="stormy">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" id="stormy" src="assets/images/game/stormy.png" alt="Storm cloud">
+                    <audio src="assets/audio/stormus.mp4"></audio>
+                </div>
+                <div class="card" data-weather="sunny">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" id="sun" src="assets/images/game/sun.png" alt="Sun">
+                    <audio src="assets/audio/heulog.mp4"></audio>
+                </div>
+                <div class="card" data-weather="windy">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" id="windy" src="assets/images/game/windy.png" alt="Windy cloud">
+                    <audio src="assets/audio/gwyntog.mp4"></audio>
+                </div>
+                <div class="card" data-weather="stormy">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/stormus.png" alt="Stormus">
+                </div>
+                <div class="card" data-weather="hot">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/poeth.png" alt="Poeth">
+                </div>
+                <div class="card" data-weather="rainbow">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/enfys.png" alt="Enfys">
+                </div>
+                <div class="card" data-weather="sunny">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/heulog.png" alt="heulog">
+                </div>
+                <div class="card" data-weather="windy">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/gwyntog.png" alt="Gwyntog">
+                </div>
+                <div class="card" data-weather="cloudy">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/cymylog.png" alt="Cymylog">
+                </div>
+                <div class="card" data-weather="rain">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/bwrwglaw.png" alt="Bwrw Glaw">
+                </div>
+                <div class="card" data-weather="snow">
+                    <img class="back" src="assets/images/game/umbrella.png" alt="Umbrella">
+                    <img class="front" src="assets/images/game/bwrweira.png" alt="Bwrw Eira">
+                </div>
             </div>
         </div>
-    </div>
-    <!-- section for timer and counter block -->
-
-    <div class="score-timer-card">
-        <div class="score-counter">
-            <h3>Number of moves: <span class="score"> 0 </span></h3>
-        </div>
-        <div class="timer1" id="timer1">Elapsed time</div>
-        <div class="timer" id="timer">00 : 00</div>
-    </div>
-    <div class="play-again">
-        <button id="resetButton">Play Again</button>
-    </div>
-    <!-- congratulations window-->
-    <div id="congratsBk" class="overlay">
-        <div id="congratsModal" class="congrats_modal">
-            <h2>Well done, you matched them all!</h2>
-            <a class="close" id="closeCongratsBtn" href="#">X</a>
-            <div class="time_score">
-                <p>You completed in <span id="totalTime"></span></p>
-                <p>using <span id="totalMoves"></span> moves.</p>
+        <!-- section for timer and counter block -->
+        <div class="score-timer-card">
+            <div class="score-counter">
+                <h3>Number of moves: <span class="score"> 0 </span></h3>
             </div>
-            <div class="play-again">
-                <button id="resetButton2">Play Again</button>
+            <div class="timer1" id="timer1">Elapsed time</div>
+            <div class="timer" id="timer">00 : 00</div>
+        </div>
+        <div class="play-again">
+            <button id="resetButton">Play Again</button>
+        </div>
+        <!-- congratulations modal-->
+        <div id="congratsBk" class="overlay">
+            <div id="congratsModal" class="congrats_modal">
+                <h2>Well done, you matched them all!</h2>
+                <a class="close" id="closeCongratsBtn" href="#">X</a>
+                <div class="time_score">
+                    <p>You completed in <span id="totalTime"></span></p>
+                    <p>using <span id="totalMoves"></span> moves.</p>
+                </div>
+                <div class="play-again">
+                    <button id="resetButton2">Play Again</button>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="assets/js/scripts.js"></script>
-</body>
-
+        <script src="assets/js/scripts.js"></script>
+    </body>
 </html>

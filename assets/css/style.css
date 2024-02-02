@@ -18,6 +18,8 @@ p {
     color: #fff;
 }
 
+/* top section styling, buttons, modal and text*/
+
 .top-section {
     position: relative;
     height: auto;
@@ -155,7 +157,6 @@ button {
     font-family: "Opem Sans", sans-serif;
 }
 
-
 .revision-list {
     margin-bottom: 25px;
     color: #fff;
@@ -173,7 +174,9 @@ button {
 .howto img {
     max-width: 100%;
 }
+
 /* section for game board*/
+
 .game-text {
     float: left;
     text-align: center;
@@ -325,6 +328,7 @@ button {
 }
 
 /* congrats modal and background */
+
 #congratsBk {
     visibility: hidden;
     opacity: 0;
@@ -363,7 +367,7 @@ button {
     max-width: 90%;
     transform: translateX(5%);
     text-align: center;
-    font-family: 'Open Sans' sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .show {
@@ -390,6 +394,7 @@ button {
 }
 
 /* Footer*/
+
 footer {
     background-color: #000000;
     color: white;

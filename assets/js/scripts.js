@@ -21,9 +21,10 @@ window.onload = initialiseBoard();
 revisionBtn.addEventListener("click", showRevisionModal); // listen for open click of revision modal
 closeBtn.addEventListener("click", closeRevisionModal); // listen for close revision modal button
 
+// listen for click on close button for congrats modal
 closeCongratsBtn.addEventListener("click", () => {
     closeCongratsModal();
-    resetBoard(); // listen for click on close button for congrats modal
+    resetBoard(); l
 });
 
 function showRevisionModal() {
@@ -33,12 +34,12 @@ function showRevisionModal() {
 function closeRevisionModal() {
     revisionModal.style.display = "none";
 }
-
+// resets the board and shuffles location
 function initialiseBoard() {
     cards.forEach((card) => card.addEventListener("click", flipCard));
     shuffle();
 }
-
+// card flip logic
 function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
@@ -67,10 +68,11 @@ function checkForMatch() {
         // it's a match
         disableCards();
     } else {
+        //if it's not a match
         unflipCards();
     }
 }
-
+//fucntion to prevent the cards being clicked whilst active
 function disableCards() {
     firstCard.removeEventListener("click", flipCard);
     secondCard.removeEventListener("click", flipCard);
@@ -82,7 +84,6 @@ function unflipCards() {
         firstCard.classList.remove("flip");
         secondCard.classList.remove("flip");
         lockBoard = false;
-        //resetBoard();
     }, 1500);
 }
 
@@ -94,7 +95,7 @@ function shuffle() {
     });
 }
 
-// funtion to add a move to the counter
+// funtion to add a move to the counter and begin the timer
 function moveCounter() {
     if (hasFlippedCard) {
         score++;
@@ -153,7 +154,6 @@ function checkWin() {
 
 function showCongratsModal() {
     congratsModal.classList.add("show");
-    //congratsModal.style.visibility = "visible";
 }
 
 function closeCongratsModal() {
